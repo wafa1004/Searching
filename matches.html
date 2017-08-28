@@ -1,0 +1,24 @@
+<!--the method matches(css) doesnt look for anything it merely checks if the given CSS-
+selector matches elem and returns true or false-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>matches</title>
+</head>
+<body>
+
+<a href="http://example.com/file.zip">Link that doesn't work anymore.</a>
+<a href="http://ya.ru">a russian website</a>
+
+<script>
+
+    for (let elem of document.body.children) {
+        if (elem.matches('a[href$="zip"]')) {
+            alert("The archive reference: "+ elem.href);
+        }
+    }
+</script>
+</body>
+</html>

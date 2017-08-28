@@ -1,0 +1,31 @@
+<!--elem.querySelectorAll(css) returns elements inside the elesm
+matching the given css-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelectorAll</title>
+</head>
+<body>
+<ul>
+    <li>the</li>
+    <li>test</li>
+</ul>
+<ul>
+    <li>has</li>
+    <li>passed</li>
+</ul>
+<script>
+    let elements = document.querySelectorAll('ul > li:first-child');
+
+    for (let elem of elements) {
+        alert(elem.innerHTML);
+    }
+</script>
+
+</body>
+</html>
+
+<!--querySelector(css) is like querySelectorAll(css)[0] but the latter
+looking at all the elements but quertySelector looks for one-->

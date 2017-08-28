@@ -1,0 +1,25 @@
+<!--getElementBy* Returns a live collection-->
+<!--querySelector returns a static collection-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementBy*</title>
+</head>
+<body>
+<div>First Div</div>
+
+<script>
+    let divs = document.getElementsByTagName('div');
+    alert(divs.length);
+</script>
+
+<div>Second div</div>
+
+<script>
+    alert(divs.length);
+</script>
+</body>
+
+</html>

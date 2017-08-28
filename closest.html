@@ -1,0 +1,28 @@
+<!--closest(css); checks the nearest ancestor that matches the css-selector-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>closest</title>
+</head>
+<body>
+<h1>Contents</h1>
+
+<div class="contents">
+    <ul class="book">
+        <li class="chapter">chapter 1</li>
+        <li class="chapter">chapter 2</li>
+    </ul>
+</div>
+
+<script>
+    let chapter = document.querySelector('.chapter');
+
+    alert(chapter.closest('.book'));
+    alert(chapter.closest('.contents'));
+
+    alert(chapter.closest('html'));
+</script>
+</body>
+</html>

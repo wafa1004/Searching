@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>getElementByName</title>
+</head>
+<body>
+<form name="my_form">
+    <div class="article">Article</div>
+    <div class="long article">Long article</div>
+</form>
+
+<script>
+    let form = document.getElementsByName('my_form')[0];
+
+    let articles = form.getElementsByClassName('article');
+    alert(articles.length);
+</script>
+</body>
+</html>
